@@ -34,4 +34,13 @@ The variable names can be either environment variables or terraform variables.
 
 * Login to [Doormat](https://doormat.hashicorp.services/)
 * Locate the account you'd like credentials for, and under the **CLI** column, click the **key** icon
-  ![CLI Credentials]()
+  ![CLI Credentials](https://github.com/kevincloud/credhelper/blob/master/docs/images/cli-button.png)
+* Click the copy button in the first option, for export AWS credentials
+  ![Copy credentials to the clipboard](https://github.com/kevincloud/credhelper/blob/master/docs/images/clipboard.png)
+* Go back to your command line and run `python credhelper.py`
+
+You should see all the workspaces where credentials are being changed.
+
+Would love any feedback!
+
+Enjoy!
