@@ -32,7 +32,7 @@ The variable names can be either environment variables or terraform variables.
 
 ## Using the App
 
-* Login to [Doormat](https://doormat.hashicorp.services/)
+* Login to **Doormat** (internal HashiCorp application)
 * Locate the account you'd like credentials for, and under the **CLI** column, click the **key** icon
   ![CLI Credentials](https://github.com/kevincloud/credhelper/blob/master/docs/images/cli-button.png)
 * Click the copy button in the first option, for export AWS credentials
@@ -41,6 +41,6 @@ The variable names can be either environment variables or terraform variables.
 
 You should see all the workspaces where credentials are being changed.
 
-Would love any feedback!
+If you have any feedback or trouble using the app, please open an issue and I'll work diligently to get it resolved.
 
 Enjoy!
