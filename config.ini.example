@@ -1,0 +1,6 @@
+[App]
+TerraformToken=0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef
+Organization=my-organization
+AwsAccessKeyNames=AWS_ACCESS_KEY_ID,aws_access_key
+AwsSecretKeyNames=AWS_SECRET_ACCESS_KEY,aws_secret_key
+AwsSessionTokenNames=AWS_SESSION_TOKEN,aws_session_token
