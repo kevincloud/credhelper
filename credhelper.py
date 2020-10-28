@@ -9,7 +9,7 @@ import pyperclip
 config = configparser.ConfigParser()
 config.read('config.ini')
 tftoken = config['App']['TerraformToken']
-organization = config['App']['Organization']
+organizations = config['App']['Organizations']
 aws_access_key_names = config['App']['AwsAccessKeyNames']
 aws_secret_key_names = config['App']['AwsSecretKeyNames']
 aws_session_token_names = config['App']['AwsSessionTokenNames']
@@ -56,7 +56,7 @@ def update_var(wkspid, varid, varname, varvalue, url, headers):
         mval = "(sensitive)"
     return mkey + ": " + mval
 
-def replace_values():
+def replace_values(organization):
     res = requests.get(url + "/organizations/" + organization + "/workspaces", headers = headers)
     wdata = json.loads(res.text)
 
@@ -96,4 +96,8 @@ def replace_values():
             print(vlist)
 
 # kick it off
-replace_values()
+organizationlist= [e.strip() for e in organizations.split(',')]
+for orgnization in organizationlist:
+    print("Doing organization:",orgnization)
+    replace_values(orgnization)
+
