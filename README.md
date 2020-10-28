@@ -2,7 +2,7 @@
 
 Swapping out AWS credentials every day on multiple workspaces is very time consuming, tedious, and not the best use of your time.
 
-Introducing, `credhelper`! This simple python utility lets you quickly and easily update all your AWS credentials in all of your TFC workspaces within a given organization.
+Introducing, `credhelper`! This simple python utility lets you quickly and easily update all your AWS credentials in all of your TFC workspaces within a list of given organizations.
 
 ## Getting Started
 
@@ -23,7 +23,7 @@ From the command line:
 * Rename `config.ini.example` to `config.ini`
 * Edit the `config.ini` file and enter your values
   - `TerraformToken`: Your Terraform API token. Should be your user API token to ensure you have access to all of your own workspaces.
-  - `Organization`: The organization you're wanting to run this script against.
+  - `Organizations`: The organizations you're wanting to run this script against, it is a comma seperated list.
   - `AwsAccessKeyNames`: List of variable names representing the AWS Access Key
   - `AwsSecretKeyNames`: List of variable names representing the AWS Secret Key ID
   - `AwsSessionTokenNames`: List of variable names representing the AWS Session Token
